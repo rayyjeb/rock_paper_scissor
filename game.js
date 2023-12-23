@@ -18,19 +18,19 @@ function randomChooseOfComputer() {
   operator = Math.ceil(Math.random() * 3);
   switch (operator) {
     case 1:
-      opponentimg.setAttribute("src", "paper-hand.png");
+      opponentimg.setAttribute("src", "./assets/paper-hand.png");
       break;
     case 2:
-      opponentimg.setAttribute("src", "rock-hand.png");
+      opponentimg.setAttribute("src", "./assets/rock-hand.png");
       break;
     case 3:
-      opponentimg.setAttribute("src", "scissors-hand.png");
+      opponentimg.setAttribute("src", "./assets/scissors-hand.png");
       break;
   }
 }
 // when each button is clicked necessary function should work
 paperBtn.onclick = () => {
-  person1img.setAttribute("src", "paper-hand.png");
+  person1img.setAttribute("src", "./assets/paper-hand.png");
   randomChooseOfComputer();
   if (operator == 2) {
     score1++;
@@ -42,7 +42,7 @@ paperBtn.onclick = () => {
   endGame();
 };
 btnRock.onclick = () => {
-  person1img.setAttribute("src", "rock-hand.png");
+  person1img.setAttribute("src", "./assets/rock-hand.png");
   randomChooseOfComputer();
   if (operator == 3) {
     score1++;
@@ -54,7 +54,7 @@ btnRock.onclick = () => {
   endGame();
 };
 scissorsBtn.onclick = () => {
-  person1img.setAttribute("src", "scissors-hand.png");
+  person1img.setAttribute("src", "./assets/scissors-hand.png");
   randomChooseOfComputer();
   if (operator == 1) {
     score1++;
