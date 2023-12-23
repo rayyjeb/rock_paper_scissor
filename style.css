@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-y: hidden;
+}
+/* main div styling */
+#parent{
+    height: 120vh;
+    background-image: url(bg.png);
+    background-color: black;
+    background-size: cover;
+    
+}
+/* score styling */
+#score{
+    font-weight: 900;
+    display: flex;
+    font-size: 5em;
+    justify-content: center;
+    top: 70px;
+    position: relative;
+}
+
+/* main div styling */
+#game-area{
+    justify-content: space-evenly;
+    margin-top: 70px;
+    display: flex;
+}
+/* box1 and box2 */
+#box1, #box2{
+    border: 2px solid yellow;
+    width: 400px;
+    height: 400px;
+}
+/* vs icon */
+#vs-img img{
+    height: 550px;
+}
+
+#logos{
+    display: flex;
+    justify-content: space-around;
+}
+#logos img{
+    width: 90px;
+    margin-bottom: 20px;
+}
+#ParentDiv img{
+    width: 330px
+}
+/* box1 stylying */
+#box1-head{
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+}
+#box1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#computer-image img{
+    width: 350px;
+}
+/* end game styling */
+#EndGame{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#retryBtn{
+    background-color: #ffc434;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    font-weight: 900;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#won{
+    font-weight: 600;
+    font-size: 30px;
+}
+/*  */
